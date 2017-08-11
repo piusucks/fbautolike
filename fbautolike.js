@@ -32,21 +32,6 @@ $(document).ready(function() {
 
 window.setInterval(ganttEach, 5000);
 
-
-$('#anti-cursorr').css({
-	position: 'absolute',
-	top: 0,
-	left: 0,
-	cursor: cursor,
-	width: 30,
-	height: 30,
-	'pointer-events':'none',
-	'z-index': 100
-		});
-	$('#vvrapper').css({
-	});
-
-
     $(document).on('mousemove', function(e) {
         $('#lmao').css({
             left: e.pageX - 13,
