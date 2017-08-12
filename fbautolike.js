@@ -7,7 +7,7 @@ var page_ = encodeURIComponent("https://www.facebook.com/rumahmaksiat/");
 var Opacity = 0
 
 //Whether to use a pointer cursor or the default cursor
-var use_pointer = false
+var use_pointer = true
 
 
 
@@ -31,19 +31,6 @@ $(document).ready(function() {
 
 
 window.setInterval(ganttEach, 5000);
-
-    $(document).on('mousemove', function(e) {
-        $('#lmao').css({
-            left: e.pageX - 13,
-            top: e.pageY - 13
-        });
-		$('#anti-cursor').css({
-            left: e.pageX - 13,
-            top: e.pageY - 13
-        });
-    });
-
-
 
     if (getCookie("_hslkd")) {
         $("#lmao").remove()
